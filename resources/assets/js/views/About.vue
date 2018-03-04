@@ -2,13 +2,12 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">About Page</div>
-
-                    <div class="card-content">
-                        I'm an example component.
+                <article class="message is-link">
+                    <div class="message-body">
+                        <strong>About</strong>
+                        <p>Avast, rough pirate. go to isla de sangria.</p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </div>

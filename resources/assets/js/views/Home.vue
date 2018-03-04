@@ -2,13 +2,12 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Home Page</div>
-
-                    <div class="card-content">
-                        I'm an example component.
+                <article class="message is-link">
+                    <div class="message-body">
+                        <strong>Home</strong>
+                        <p>The planet is more mermaid now than particle. clear and never chemical.</p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </div>

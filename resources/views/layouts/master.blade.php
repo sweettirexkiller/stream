@@ -12,7 +12,15 @@
 
         <div id="app">
 
-            
+            @include('layouts.header')
+
+            <section class="section">
+                <div class="container">
+                    <router-view></router-view>
+                </div>
+            </section>
+
+
         </div>
 
         <script src="/js/app.js "></script>
