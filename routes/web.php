@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/statuses', function(){
+   return App\Status::latest()->get();
+});

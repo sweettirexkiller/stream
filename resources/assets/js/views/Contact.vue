@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
+        <div class="columns">
+            <div class="column">
                 <article class="message is-link">
                     <div class="message-body">
                         <strong>Contact</strong>

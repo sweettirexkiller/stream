@@ -1,12 +1,13 @@
 <template>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <article class="message is-link">
-                    <div class="message-body">
-                        <strong>Home</strong>
-                        <p>The planet is more mermaid now than particle. clear and never chemical.</p>
+        <div class="columns">
+            <div class="column">
+                <article class="message is-link" v-for="status in statuses">
+                    <div class="message-header">
+                        <p>{{status.user.name}} said...</p>
+                        <p>A moment ago</p>
                     </div>
+                    <div class="message-body" v-text="status.body"></div>
                 </article>
             </div>
         </div>
@@ -15,8 +16,15 @@
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        data(){
+            return {
+                statuses: []
+            }
+        },
+
+        created() {
+            axios.get('/statuses')
+                .then(({data}) => this.statuses = data);
         }
     }
 </script>
