@@ -5,7 +5,7 @@
                 <article class="message" v-for="status in statuses">
                     <div class="message-header">
                         <p><strong>{{status.user.name}}</strong> said...</p>
-                        <p>{{postedOn(status)}}</p>
+                        <p>{{status.created_at | ago }}</p>
                     </div>
                     <div class="message-body" v-text="status.body"></div>
                 </article>
@@ -19,19 +19,20 @@
     import Status from '../models/status';
 
     export default {
-        data(){
+        data() {
             return {
                 statuses: []
+            }
+        },
+        filters: {
+            ago(date) {
+                return moment(date).fromNow();
+
             }
         },
 
         created() {
             Status.all(statuses => this.statuses = statuses);
         },
-        methods: {
-            postedOn(status){
-                return moment(status.created_at).fromNow();
-            }
-        }
     }
 </script>
