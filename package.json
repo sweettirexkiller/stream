@@ -1,6 +1,8 @@
 {
     "private": true,
-    "scripts": {},
+    "scripts": {
+        "webpack": "node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
     "devDependencies": {
         "axios": "^0.18",
         "laravel-mix": "^2.0.0",
