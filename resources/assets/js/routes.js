@@ -8,6 +8,10 @@ let routes = [
     {
         path: '/about',
         component: require('./views/About'),
+    },
+    {
+        path: '/contact',
+        component: require('./views/Contact'),
     }
 ];
 export default new VueRouter({

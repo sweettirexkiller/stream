@@ -7,6 +7,9 @@
             <router-link to="/about" tag="li" exact>
                 <a>About</a>
             </router-link>
+            <router-link to="/contact" tag="li" exact>
+                <a>Contact</a>
+            </router-link>
         </ul>
     </div>
 </nav>
