@@ -1,8 +1,13 @@
 import Vue from 'vue';
-import Axios from 'axios';
+import axios from 'axios';
+import VueRouter from 'vue-router';
+
+import 'bulma';
 
 window.Vue = Vue;
-window.axios = Axios;
+Vue.use(VueRouter);
+
+window.axios = axios;
 
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

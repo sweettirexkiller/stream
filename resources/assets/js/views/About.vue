@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Home Page</div>
+                    <div class="card-header">About Page</div>
 
                     <div class="card-content">
                         I'm an example component.
