@@ -17,5 +17,5 @@ Route::get('/', function () {
 
 
 Route::get('/statuses', function(){
-   return App\Status::latest()->get();
+   return App\Status::with('user')->latest()->get();
 });
