@@ -41,9 +41,6 @@
          methods: {
             addStatus(status){
                 this.statuses.unshift(status);
-
-                alert('Your status has been added to the stream!');
-
                 window.scrollTo(0,0);
             }
          }
