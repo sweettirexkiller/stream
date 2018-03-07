@@ -10,9 +10,6 @@
             <router-link to="/contact" tag="li" exact>
                 <a>Contact</a>
             </router-link>
-            <router-link to="/scoped" tag="li" exact>
-                <a>Scoped slot</a>
-            </router-link>
         </ul>
     </div>
 </nav>

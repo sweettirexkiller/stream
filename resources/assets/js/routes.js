@@ -12,10 +12,6 @@ let routes = [
     {
         path: '/contact',
         component: require('./views/Contact'),
-    },
-    {
-        path: '/scoped',
-        component: require('./views/MenuList'),
     }
 ];
 export default new VueRouter({
